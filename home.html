@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+		<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		
+		<style>
+			h2{
+				padding-left: 10px;
+			}
+			.mon_form input{
+				display:inline;
+			}
+			.mon_form .mon_h div{
+				line-height: 45px;
+			}
+		</style>
+
+		<title>ALTER PLANING</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#"><span class="oi oi-home"></span> AlterPlanning</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><span class="oi oi-calendar"></span> Proposer un planning <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="oi oi-magnifying-glass"></span> Recherche</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="oi oi-loop-circular"></span> Importation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="oi oi-cog"></span> Organisation
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"><span class="oi oi-command"></span> Gestion des pré requis</a>
+							<a class="dropdown-item" href="#"><span class="oi oi-puzzle-piece"></span> Module complémentaire</a>
+							<a class="dropdown-item" href="#"><span class="oi oi-spreadsheet"></span> Modèles de planning</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><span class="oi oi-wrench"></span> Paramètrage</a>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<div class="d-flex flex-row-reverse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="oi oi-person"></span> Nom Prénom
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"><span class="oi oi-book"></span> Historique</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><span class="oi oi-x"></span> Déconnexion</a>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main role="main" style="padding-top:50px;">
+			<h2>Interface de proposition de planning</h2>
+			<div class="d-flex flex-row mon_form">
+				<div class="p-3 mon_h">
+					<div>
+						<span>Pour :</span>
+						<input type="text" class="form-control" style="width:150px" placeholder="Nom"/>
+						<input type="text" class="form-control" style="width:150px" placeholder="Prénom"/>
+						<input type="text" class="form-control" style="width:200px" placeholder="Nom de l'entreprise"/>
+					</div>
+					<div>
+						<span>Nombre d'heures :</span>
+						<input type="text" class="form-control" style="width:70px" placeholder="Min."/>
+						<span>ou / et</span>
+						<input type="text" class="form-control" style="width:70px" placeholder="Max."/>
+					</div>
+					<div>
+						<span>Date de début :</span>
+						<input type="text" class="form-control" style="width:150px" placeholder="Aujourd'hui"/>
+						<button type="button" class="btn btn-outline-info" style="vertical-align: baseline;"><span class="oi oi-spreadsheet"></span></button>
+					</div>
+				</div>
+				<div class="p-3">
+					<span>Lieux :</span>
+					<div>
+						<label><input type="checkbox"> Nantes </label>
+						<label><input type="checkbox"> Rennes </label>
+						<label><input type="checkbox"> St Nazaires </label>
+						<label><input type="checkbox"> ENI Service </label>
+						<label><input type="checkbox"> Autre </label>
+					</div>
+					<div>
+						<label><input type="checkbox"> Niort </label>
+						<label><input type="checkbox"> Quimper </label>
+						<label><input type="checkbox"> Hub Creatic </label>
+						<label><input type="checkbox"> La Roche sur Yon </label>
+					</div>
+					<div>
+						<label><input type="checkbox"> Angers </label>
+						<label><input type="checkbox"> Le Mans </label>
+						<label><input type="checkbox"> Eptoyou </label>
+						<label><input type="checkbox"> Salle Edition </label>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+			sdfsdf
+			<span class="oi oi-home"></span>
+		</main>
+		<!--
+		les icones :
+		https://useiconic.com/open/
+		
+		-->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
