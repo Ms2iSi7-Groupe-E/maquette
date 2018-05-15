@@ -7,7 +7,8 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
-		<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<!--<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		
 		<style>
 			h2{
@@ -85,30 +86,30 @@
 	<body>
 		<header>
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="home.html"><span class="oi oi-home"></span> AlterPlanning</a>
+				<a class="navbar-brand" href="home.html"><i class="fas fa-home"></i></span> AlterPlanning</a>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="home.html"><span class="oi oi-calendar"></span> Proposer un planning <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="home.html"><i class="far fa-calendar-alt"></i> Proposer un planning <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="oi oi-magnifying-glass"></span> Recherche</a>
+							<a class="nav-link" href="#"><i class="fas fa-search"></i> Recherche</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="oi oi-loop-circular"></span> Importation</a>
+							<a class="nav-link" href="#"><i class="fas fa-download"></i> Importation</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="oi oi-cog"></span> Organisation
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="gestion_pre_requis.html"><span class="oi oi-command"></span> Gestion des pré requis</a>
-							<a class="dropdown-item" href="#"><span class="oi oi-puzzle-piece"></span> Module complémentaire</a>
-							<a class="dropdown-item" href="#"><span class="oi oi-spreadsheet"></span> Modèles de planning</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#"><span class="oi oi-wrench"></span> Paramètrage</a>
-						</div>
+								<i class="fas fa-cogs"></i> Organisation
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="gestion_pre_requis.html"><i class="fas fa-plus-square"></i> Gestion des pré requis</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-stream"></i> Module complémentaire</a>
+								<a class="dropdown-item" href="#"><i class="far fa-calendar-plus"></i> Modèles de planning</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="fas fa-code-branch"></i> Paramètrage</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -116,13 +117,13 @@
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="oi oi-person"></span> Nom Prénom
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#"><span class="oi oi-book"></span> Historique</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="index.html"><span class="oi oi-x"></span> Déconnexion</a>
-						</div>
+								<i class="fas fa-id-card"></i> Nom Prénom
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#"><i class="fas fa-book"></i> Historique</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="fas fa-door-open"></i> Déconnexion</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -131,7 +132,7 @@
 		<main role="main" style="padding-top:50px;">
 			<h2>Détail de la zone du calendrier : modèle linéaire</h2>
 			<div class="row" style="margin: 0px 7px">
-				<button type="button" class="btn btn-outline-success" style="vertical-align: baseline;" onclick="window.location.href='home.html'"><span class="oi oi-chevron-left"></span> Retour sur la proposition de planning</button>
+				<button type="button" class="btn btn-outline-success" style="vertical-align: baseline;" onclick="window.location.href='home.html'"><i class="fas fa-chevron-left"></i> Retour sur la proposition de planning</button>
 			</div>
 			<div class="row" style="margin:5px;">
 				<div class="col-1" style="text-align:center;">
@@ -176,7 +177,7 @@
 					</div>
 				</div>
 				<div class="col">
-					<table width="100%" border="1">
+					<table width="100%" border="1" style="border:1px #ccc;border-radius:3px;">
 						<thead>
 							<tr>
 								<td class="col_title" colspan="3">Mars</td>

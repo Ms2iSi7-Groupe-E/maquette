@@ -7,7 +7,8 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
-		<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<!--<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		
 		<style>
 			h2{
@@ -133,30 +134,30 @@
 	<body>
 		<header>
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="home.html"><span class="oi oi-home"></span> AlterPlanning</a>
+				<a class="navbar-brand" href="home.html"><i class="fas fa-home"></i></span> AlterPlanning</a>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="home.html"><span class="oi oi-calendar"></span> Proposer un planning <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="home.html"><i class="far fa-calendar-alt"></i> Proposer un planning <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="oi oi-magnifying-glass"></span> Recherche</a>
+							<a class="nav-link" href="#"><i class="fas fa-search"></i> Recherche</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="oi oi-loop-circular"></span> Importation</a>
+							<a class="nav-link" href="#"><i class="fas fa-download"></i> Importation</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="oi oi-cog"></span> Organisation
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="gestion_pre_requis.html"><span class="oi oi-command"></span> Gestion des pré requis</a>
-							<a class="dropdown-item" href="#"><span class="oi oi-puzzle-piece"></span> Module complémentaire</a>
-							<a class="dropdown-item" href="#"><span class="oi oi-spreadsheet"></span> Modèles de planning</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#"><span class="oi oi-wrench"></span> Paramètrage</a>
-						</div>
+								<i class="fas fa-cogs"></i> Organisation
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="gestion_pre_requis.html"><i class="fas fa-plus-square"></i> Gestion des pré requis</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-stream"></i> Module complémentaire</a>
+								<a class="dropdown-item" href="#"><i class="far fa-calendar-plus"></i> Modèles de planning</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="fas fa-code-branch"></i> Paramètrage</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -164,13 +165,13 @@
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="oi oi-person"></span> Nom Prénom
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#"><span class="oi oi-book"></span> Historique</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="index.html"><span class="oi oi-x"></span> Déconnexion</a>
-						</div>
+								<i class="fas fa-id-card"></i> Nom Prénom
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#"><i class="fas fa-book"></i> Historique</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="fas fa-door-open"></i> Déconnexion</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -204,23 +205,23 @@
 					<div>
 						<span style="text-decoration: underline;">Résultat(s):</span>
 						<div class="col item_module over_green">
-							<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+							<i class="far fa-calendar-alt"></i> Rappels sur la programmation en Java
 						</div>
 						<div class="col item_module over_green">
-							<span class="oi oi-calendar"></span> Services Réseaux
+							<i class="far fa-calendar-alt"></i> Services Réseaux
 						</div>
 						<div class="col item_module over_green">
-							<span class="oi oi-calendar"></span> Développement Web côté client
+							<i class="far fa-calendar-alt"></i> Développement Web côté client
 						</div>
 						<div class="col item_module over_green">
-							<span class="oi oi-calendar"></span> .........
+							<i class="far fa-calendar-alt"></i> .........
 						</div>
 					</div>
 				</div>
 				<div class="col" style="width:33%;">
 					<h4>Ajouter un Pré requis à</h4>
 					<div class="col item_module">
-						<span class="oi oi-calendar"></span> Services Réseaux
+						<i class="far fa-calendar-alt"></i> Services Réseaux
 					</div>
 					<table width="100%">
 						<tr>
@@ -251,13 +252,13 @@
 							</div>
 						</div>
 						<div class="col item_module item_result purple">
-							<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+							<i class="far fa-calendar-alt"></i> Rappels sur la programmation en Java
 						</div>
 						<div class="col item_module item_result purple">
-							<span class="oi oi-calendar"></span> Services Réseaux
+							<i class="far fa-calendar-alt"></i> Services Réseaux
 						</div>
 						<div class="col item_module item_result purple">
-							<span class="oi oi-calendar"></span> Développement Web côté client
+							<i class="far fa-calendar-alt"></i> Développement Web côté client
 						</div>
 					</div>
 				</div>
@@ -265,26 +266,26 @@
 					<h4>Pré requis</h4>
 					<div>
 						<div class="col item_module item_select">
-							<span class="oi oi-calendar"></span> Téléphonie IP et Messagerie
-							<span class="oi oi-circle-x ico_delete"></span>
+							<i class="far fa-calendar-alt"></i> Téléphonie IP et Messagerie
+							<i class="fas fa-times-circle ico_delete"></i>
 						</div>
 						<div style="text-align:center;">
-							<span class="oi oi-plus ico_and"></span>
+							<i class="fas fa-plus-square ico_and"></i>
 						</div>
 						<div class="col item_module item_select">
-							<span class="oi oi-calendar"></span> Développement Web côté client
-							<span class="oi oi-circle-x ico_delete"></span>
+							<i class="far fa-calendar-alt"></i> Développement Web côté client
+							<i class="fas fa-times-circle ico_delete"></i>
 						</div>
 						<div style="text-align:center;">
 							<span class="ico_or">
-								<span class="oi oi-arrow-left"></span>
+								<i class="fas fa-chevron-left"></i>
 								Ou
-								<span class="oi oi-arrow-right"></span>
+								<i class="fas fa-chevron-right"></i>
 							</span>
 						</div>
 						<div class="col item_module item_select">
-							<span class="oi oi-calendar"></span> ..................
-							<span class="oi oi-circle-x ico_delete"></span>
+							<i class="far fa-calendar-alt"></i> ..................
+							<i class="fas fa-times-circle ico_delete"></i>
 						</div>
 					</div>
 				</div>
@@ -306,36 +307,36 @@
 						<tr valign="top">
 							<td class="td_one">
 								<div class="col item_module over_green">
-									<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+									<i class="far fa-calendar-alt"></i> Rappels sur la programmation en Java
 								</div>
 							</td>
 							<td>
 								<div class="col item_module item_show_liste">
-									<span class="oi oi-calendar"></span> Téléphonie IP et Messagerie
+									<i class="far fa-calendar-alt"></i> Téléphonie IP et Messagerie
 								</div>
-								<span class="oi oi-plus ico_operator_and"></span>
+								<i class="fas fa-plus-square ico_operator_and"></i>
 								<div class="col item_module item_show_liste">
-									<span class="oi oi-calendar"></span> Développement Web côté client
+									<i class="far fa-calendar-alt"></i> Développement Web côté client
 								</div>
 							</td>
 						</tr>
 						<tr valign="top">
 							<td class="td_one">
 								<div class="col item_module over_green">
-									<span class="oi oi-calendar"></span> .....................
+									<i class="far fa-calendar-alt"></i> .....................
 								</div>
 							</td>
 							<td>
 								<div class="col item_module item_show_liste">
-									<span class="oi oi-calendar"></span> .................
+									<i class="far fa-calendar-alt"></i> .................
 								</div>
 								<div class="ico_operator_or">
-									<span class="oi oi-arrow-left"></span>
+									<i class="fas fa-chevron-left"></i>
 									Ou
-									<span class="oi oi-arrow-right"></span>
+									<i class="fas fa-chevron-right"></i>
 								</div>
 								<div class="col item_module item_show_liste">
-									<span class="oi oi-calendar"></span> .................
+									<i class="far fa-calendar-alt"></i> .................
 								</div>
 							</td>
 						</tr>
