@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+		<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		
+		<style>
+			h2{
+				padding-left: 10px;
+			}
+			.row{
+				padding:0 25px;
+				margin-bottom:5px;
+			}
+			.col:not(:last-child){
+				margin-right:5px;
+			}
+			.col{
+				border:1px solid #ccc;
+				background-color:#e8e8e8;
+				border-radius:3px;
+			}
+			.item_module{
+				border:1px solid #2d601d;
+				background-color:#d0ffc1;
+				padding: 2px 10px;
+				margin-bottom: 5px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 75ch;
+			}
+			.over_green:hover{
+				cursor: pointer;
+				border: 1px solid #4bff12;
+				background-color: #b8ffc0;
+			}
+			.item_result{
+				background-color:#ecafff;
+			}
+			.purple:hover{
+				cursor: pointer;
+				background-color: #ecd1f5;
+				border: 1px solid #d8a4da;
+			}
+			.item_select{
+				background-color:#afdcff;
+				margin-bottom:6px;
+			}
+			.ico_and{
+				border: 1px solid #99a0ec;
+				border-radius: 3px;
+				background-color: #82bee6;
+				color: white;
+				padding: 5px;
+				margin-bottom:6px;
+			}
+			.ico_delete{
+				border-radius: 3px;
+				color: #f58282;
+				float: right;
+				margin-top: 2px;
+			}
+			.ico_delete:hover{
+				color: red;
+				cursor: pointer;
+			}
+			.ico_or{
+				display: inline-block;
+				border: 1px solid #7cb17b;
+				border-radius: 3px;
+				background-color: #6eec2b;
+				color: white;
+				padding: 3px;
+				margin-bottom:6px;
+			}
+			.item_show_liste{
+				width: 30%;
+				display: inline-block;
+				float: left;
+				background-color: #b3e6f5;
+			}
+			.item_show_liste:hover{
+				cursor: pointer;
+				background-color: #e1eef9;
+				border: 1px solid #c7fffc;
+			}
+			.tbl_liste td{
+				padding-top:5px;
+			}
+			.tbl_liste tr:first-child td {
+				padding-bottom:5px;
+			}
+			.tbl_liste tr:not(:last-child){
+				border-bottom:1px solid #ccc;
+			}
+			.tbl_liste td:nth-child(2){
+				padding-left:5px;
+			}
+			.td_one{
+				padding-right:5px;
+			}
+			.no_hover:hover{
+				cursor: pointer;
+			}
+			.ico_operator_and,.ico_operator_or{
+				padding: 5px;
+				display: inline-block;
+				float: left;
+				margin-right: 4px;
+				border-radius: 3px;
+				color: white;
+			}
+			.ico_operator_and{
+				border: 1px solid #99a0ec;
+				background-color: #82bee6;
+			}
+			.ico_operator_or{
+				border: 1px solid #7cb17b;
+				background-color: #6eec2b;
+				line-height: 1;
+				padding: 4px 5px 5px 5px;
+			}
+		</style>
+
+		<title>ALTER PLANING</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="home.html"><span class="oi oi-home"></span> AlterPlanning</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="home.html"><span class="oi oi-calendar"></span> Proposer un planning <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="oi oi-magnifying-glass"></span> Recherche</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="oi oi-loop-circular"></span> Importation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="oi oi-cog"></span> Organisation
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="gestion_pre_requis.html"><span class="oi oi-command"></span> Gestion des pré requis</a>
+							<a class="dropdown-item" href="#"><span class="oi oi-puzzle-piece"></span> Module complémentaire</a>
+							<a class="dropdown-item" href="#"><span class="oi oi-spreadsheet"></span> Modèles de planning</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><span class="oi oi-wrench"></span> Paramètrage</a>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<div class="d-flex flex-row-reverse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="oi oi-person"></span> Nom Prénom
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"><span class="oi oi-book"></span> Historique</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="index.html"><span class="oi oi-x"></span> Déconnexion</a>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main role="main" style="padding-top:50px;">
+			<h2>Gestion des pré requis</h2>
+			<div class="row">
+				<div class="col" style="width:33%;">
+					<h4>Module concerné</h4>
+					<table width="100%">
+						<tr>
+							<td>Titre :</td>
+							<td align="right">
+								<input type="text" class="form-control" placeholder="Saisir le titre"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Formation :</td>
+							<td>
+								<input type="text" class="form-control" placeholder="Saisir la formation"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Module :</td>
+							<td>
+								<input type="text" class="form-control" placeholder="Saisir le module"/>
+							</td>
+						</tr>
+					</table>
+					<div>
+						<span style="text-decoration: underline;">Résultat(s):</span>
+						<div class="col item_module over_green">
+							<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+						</div>
+						<div class="col item_module over_green">
+							<span class="oi oi-calendar"></span> Services Réseaux
+						</div>
+						<div class="col item_module over_green">
+							<span class="oi oi-calendar"></span> Développement Web côté client
+						</div>
+						<div class="col item_module over_green">
+							<span class="oi oi-calendar"></span> .........
+						</div>
+					</div>
+				</div>
+				<div class="col" style="width:33%;">
+					<h4>Ajouter un Pré requis à</h4>
+					<div class="col item_module">
+						<span class="oi oi-calendar"></span> Services Réseaux
+					</div>
+					<table width="100%">
+						<tr>
+							<td>Titre :</td>
+							<td align="right">
+								<input type="text" class="form-control" placeholder="Saisir le titre"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Formation :</td>
+							<td>
+								<input type="text" class="form-control" placeholder="Saisir la formation"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Module :</td>
+							<td>
+								<input type="text" class="form-control" placeholder="Saisir le module"/>
+							</td>
+						</tr>
+					</table>
+					<div>
+						<div>
+							<span style="text-decoration: underline;">Résultat(s):</span>
+							<div style="display: inline-block;float: right;margin-right: 5px;">
+								<input type="radio" name="item_operator" checked="checked"/> Et
+								<input type="radio" name="item_operator"/> Ou
+							</div>
+						</div>
+						<div class="col item_module item_result purple">
+							<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+						</div>
+						<div class="col item_module item_result purple">
+							<span class="oi oi-calendar"></span> Services Réseaux
+						</div>
+						<div class="col item_module item_result purple">
+							<span class="oi oi-calendar"></span> Développement Web côté client
+						</div>
+					</div>
+				</div>
+				<div class="col" style="width:33%;">
+					<h4>Pré requis</h4>
+					<div>
+						<div class="col item_module item_select">
+							<span class="oi oi-calendar"></span> Téléphonie IP et Messagerie
+							<span class="oi oi-circle-x ico_delete"></span>
+						</div>
+						<div style="text-align:center;">
+							<span class="oi oi-plus ico_and"></span>
+						</div>
+						<div class="col item_module item_select">
+							<span class="oi oi-calendar"></span> Développement Web côté client
+							<span class="oi oi-circle-x ico_delete"></span>
+						</div>
+						<div style="text-align:center;">
+							<span class="ico_or">
+								<span class="oi oi-arrow-left"></span>
+								Ou
+								<span class="oi oi-arrow-right"></span>
+							</span>
+						</div>
+						<div class="col item_module item_select">
+							<span class="oi oi-calendar"></span> ..................
+							<span class="oi oi-circle-x ico_delete"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" style="padding-bottom:5px;">
+					<h4>Liste des pré requis</h4>
+					<table width="100%" class="tbl_liste">
+						<tr>
+							<td width="30%">
+								Module : 
+								<input type="text" class="form-control" placeholder="Saisir le module" style="display: inline-block;width: auto;"/>
+							</td>
+							<td>
+								Pré requis : 
+								<input type="text" class="form-control" placeholder="Saisir le module pré requis" style="display: inline-block;width: 60%;"/>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td class="td_one">
+								<div class="col item_module over_green">
+									<span class="oi oi-calendar"></span> Rappels sur la programmation en Java
+								</div>
+							</td>
+							<td>
+								<div class="col item_module item_show_liste">
+									<span class="oi oi-calendar"></span> Téléphonie IP et Messagerie
+								</div>
+								<span class="oi oi-plus ico_operator_and"></span>
+								<div class="col item_module item_show_liste">
+									<span class="oi oi-calendar"></span> Développement Web côté client
+								</div>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td class="td_one">
+								<div class="col item_module over_green">
+									<span class="oi oi-calendar"></span> .....................
+								</div>
+							</td>
+							<td>
+								<div class="col item_module item_show_liste">
+									<span class="oi oi-calendar"></span> .................
+								</div>
+								<div class="ico_operator_or">
+									<span class="oi oi-arrow-left"></span>
+									Ou
+									<span class="oi oi-arrow-right"></span>
+								</div>
+								<div class="col item_module item_show_liste">
+									<span class="oi oi-calendar"></span> .................
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
