@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+		<!--<link href="assets/font/css/open-iconic-bootstrap.css" rel="stylesheet">-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		
+		<style>
+			h2{
+				padding-left: 10px;
+			}
+			h4{
+				padding-left: 10px;
+				text-decoration: underline;
+			}
+			
+		</style>
+
+		<title>ALTER PLANING</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="home.html"><i class="fas fa-home"></i></span> AlterPlanning</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="home.html"><i class="far fa-calendar-alt"></i> Proposer un planning <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="recherche.html"><i class="fas fa-search"></i> Recherche</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-download"></i> Importation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-cogs"></i> Organisation
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="gestion_pre_requis.html"><i class="fas fa-plus-square"></i> Gestion des pré requis</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-stream"></i> Module complémentaire</a>
+								<a class="dropdown-item" href="#"><i class="far fa-calendar-plus"></i> Modèles de planning</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="fas fa-code-branch"></i> Paramètrage</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="d-flex flex-row-reverse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-id-card"></i> Nom Prénom
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#"><i class="fas fa-book"></i> Historique</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="fas fa-door-open"></i> Déconnexion</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main role="main" style="padding-top:50px;">
+			<h2>Recherche de calendrier</h2>
+			<h4>Filtre de recherche</h4>
+			<div class="d-flex flex-row">
+				<div class="p-2"><input type="text" class="form-control" placeholder="Nom du stagiaire"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Prénom du stagiaire"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Nom de l’entreprise"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Nom de la promotion"/></div>
+			</div>
+			<div class="d-flex flex-row">
+				<div class="p-2"><input type="text" class="form-control" placeholder="Nom du cursus"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Nom du module"/></div>
+				<div class="p-2"><span style="padding-top: 5px;display: table-cell">Dates :</span></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Début"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Fin"/></div>
+				<div class="p-2"><input type="text" class="form-control" placeholder="Incluse"/></div>
+			</div>
+			<div class="row" style="padding-left: 10px">
+				<div class="col">
+					Etats :&nbsp;
+					<label><input type="radio" name="item_etat" checked="checked"/> Tous</label>&nbsp;
+					<label><input type="radio" name="item_etat"/> Proposition</label>&nbsp;
+					<label><input type="radio" name="item_etat"/> Confirmé</label>
+				</div>
+				<div class="col">
+					<button type="button" class="btn btn-outline-secondary float-right" style="margin-right: 10px;"><i class="fas fa-search"></i> Recherche</button>
+				</div>
+			</div>
+			<hr/>
+			<h4>Liste des résultats de recherche</h4>
+sdfsdf
+		</main>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
